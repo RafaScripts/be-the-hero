@@ -6,6 +6,8 @@ export default StyleSheet.create({
         flex : 1,
         paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight + 20,
+        // provavel dark mode apenas descomente a linha a seguir ->
+        //backgroundColor: '#000000'
     },
     
     header: {

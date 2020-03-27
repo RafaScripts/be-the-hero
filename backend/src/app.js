@@ -1,12 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const routes = require('./routes');
+const { errors } = require('celebrate');
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(routes);
+app.use(errors());
+
+
 /** 
  * rota / recurso
  */
@@ -22,7 +26,7 @@ DELETE: deleta uma informação no back-end
 /**
  * Query Params: parâmetros nomeados enviados na rota após "?" (filtros, paginação)
  * Route Params: parâmetros utilizados para indentificar recursos 
- * Request Body:
+ * Request Body: corpo de requisição utilizado para criar ou alterar recursos
  */
 
 /**
@@ -32,4 +36,4 @@ DELETE: deleta uma informação no back-end
 
 
 
-app.listen(3333);
+module.exports = app;

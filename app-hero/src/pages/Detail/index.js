@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, TouchableOpacity, Text, Linking } from 'react-native';
+import { View, Image, TouchableOpacity, Text, Linking, FlatList } from 'react-native';
 import styles from './styles';
 import logoImg from '../../assets/logo.png';
 import { Feather } from '@expo/vector-icons';
