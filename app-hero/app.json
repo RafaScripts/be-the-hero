@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Be The Hero",
-    "slug": "bethehero",
+    "name": "Be The Hero Project",
+    "slug": "betheheroproject",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -24,7 +24,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.RafaScript.bethehero",
+      "buildNumber": "1.0.0"
+    },
+
+    "android": {
+      "package": "com.RafaScript.bethehero",
+      "versionCode": 1
+    },
+
+    "description": "uma aplicação totalmente construída em nodejs(backend), react(frontend) e react-native(aplicativo). ",
+    "githubUrl": "https://github.com/Walker665/be-the-hero"
   }
 }
