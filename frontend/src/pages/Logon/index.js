@@ -20,13 +20,14 @@ import api from '../../services/api';
 
 export default function Logon() {
     const [id, setId] = useState('');
+    const [key, setKey] = useState('');
     const history = useHistory();
 
     async function handleLogin(e) {
         e.preventDefault();
      
         try {
-          const response = await api.post('sessions', { id });
+          const response = await api.post('sessions', { id, key });
 
           localStorage.setItem('ongId', id);
           localStorage.setItem('ongName', response.data.name);
@@ -50,6 +51,14 @@ export default function Logon() {
                       value={id}
                       onChange={e => setId(e.target.value)}
                     />
+
+                    <input
+                      placeholder="Sua Key"
+                      value={key}
+                      onChange={e => setKey(e.target.value)}
+                    />
+
+
                     <button className="button" type="submit">Entrar</button>
 
                     <Link className="back-link" to="/register">

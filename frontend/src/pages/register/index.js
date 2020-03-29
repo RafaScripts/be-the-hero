@@ -42,7 +42,7 @@ export default function Register() {
         try { 
             const response = await api.post('ongs', data);
             
-            alert(`Seu ID de acesso: ${response.data.id}`);
+            alert(`Seu ID de acesso: ${response.data.id}, Sua key de acesso: ${response.data.key}. Guarde-os bem.`);
 
             history.push('/');
         } catch (err) {
@@ -80,7 +80,7 @@ export default function Register() {
                       onChange={e => setEmail(e.target.value)}  
                     />
                     <input
-                      placeholder="Whatsapp"
+                      placeholder="Whatsapp (Começando com 55 + ddd)"
                       value={whatsapp}
                       onChange={e => setWhatsapp(e.target.value)}  
                     />
