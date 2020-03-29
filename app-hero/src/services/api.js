@@ -3,7 +3,7 @@ import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 
 const api = axios.create({
-    baseURL: 'http://c65e4463.ngrok.io'
+    baseURL: 'https://backend-hero.herokuapp.com'
 });
 
 export default api;
