@@ -7,4 +7,11 @@
    e precisa de doações) assim a ONG vigente do caso pode divulga-lo e pode receber contado de varios "Heros", para receber doações monetarias ou não.
 <p/>
 
+<p>link para live do frontend: <a href="url">https://practical-hopper-e584a2.netlify.com<a/> <p/>
+
+<p>link para app no expo: <a href="url">https://expo.io/@walker665/betheheroproject<a/> <p/>
+    
+
 <h4>Programador: Rafael Santos Freire<h4/>
+    
+    
