@@ -1,4 +1,5 @@
 const generateUniqueId = require('../utils/generateUniqueId');
+const generateUniqueKey = require('../utils/generateUniqueKey');
 const connection = require('../database/connection');
 
 module.exports = {
@@ -14,9 +15,11 @@ module.exports = {
 
 
     const id = generateUniqueId();
+    const key = generateUniqueKey();
 
     await connection('ongs').insert({
       id,
+      key,
       name,
       email,
       whatsapp,
@@ -24,7 +27,6 @@ module.exports = {
       uf,
     })
   
-    return response.json({ id });
-    
+    return response.json({ id, key });
     }
 };
