@@ -7,18 +7,24 @@ Be The Hero é uma aplicação que tem por objetivo principal ajudar ONGs a publ
 
 <p>link para app no expo: <a href="url">https://expo.io/@walker665/betheheroproject<a/> <p/>
 
-![](./assets/pagina p.png)
+![](./assets/pagina.png)
+![](./assets/profile2.png)
+
 
 ## Instalação
 
-OS X & Linux:
+OS X & Linux & Windows:
 
-```sh
-npm install my-crazy-module --save
+```
+npm install
+```
+# iniciar
+```
+npm start
 ```
 
-Windows:
+## Aplicativo
 
-```sh
-edit autoexec.bat
-```
+![](./assets/splash.jpg)
+![](./assets/incindent.jpg) 
+![](./assets/descpt.jpg)
