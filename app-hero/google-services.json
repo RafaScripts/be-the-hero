@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1085534352212",
+    "firebase_url": "https://be-the-hero-bac61.firebaseio.com",
+    "project_id": "be-the-hero-bac61",
+    "storage_bucket": "be-the-hero-bac61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085534352212:android:5a2c9a341fdeb4bf530ec1",
+        "android_client_info": {
+          "package_name": "com.RafaScript.bethehero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085534352212-qani3vudeqv8ivd6e53hl7298pd1851q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqECpJvEZfAoINxYZe0cZBX0JbI4mK4jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085534352212-qani3vudeqv8ivd6e53hl7298pd1851q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

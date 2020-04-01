@@ -26,11 +26,18 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.RafaScript.bethehero",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6827368962849486~7202526698"
+      }
     },
     "android": {
       "package": "com.RafaScript.bethehero",
-      "versionCode": 1
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6827368962849486~7202526698"
+      }
     },
     "description": "uma aplicação totalmente construída em nodejs(backend), react(frontend) e react-native(aplicativo). ",
     "githubUrl": "https://github.com/Walker665/be-the-hero"

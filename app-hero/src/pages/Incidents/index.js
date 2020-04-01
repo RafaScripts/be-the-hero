@@ -9,6 +9,14 @@ import styles from './styles';
 
 import api from '../../services/api';
 
+import { AdMobInterstitial, } from 'expo-ads-admob';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 export default function Incidents () {
     const navigation = useNavigation();
@@ -16,6 +24,23 @@ export default function Incidents () {
     const [total, setTotal] = useState(0);
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false); 
+
+    useEffect(() => {
+        async function loadAd() {
+            AdMobInterstitial.setAdUnitID('ca-app-pub-6827368962849486/3055683530');
+            interstitialAd();
+        }
+
+        loadAd();
+
+    }, []);
+
+    
+    
+    async function interstitialAd() {
+        await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
+        await AdMobInterstitial.showAdAsync();
+    }
     
     async function loadIncidents() {
         if (loading) {
