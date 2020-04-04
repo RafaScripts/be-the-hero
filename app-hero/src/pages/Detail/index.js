@@ -34,6 +34,7 @@ export default function Detail() {
     
     
     async function interstitialAd() {
+        
         await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
         await AdMobInterstitial.showAdAsync();
     }
